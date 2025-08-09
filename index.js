@@ -1,8 +1,8 @@
 function formValidation() {
     //step-1 to store user input
-    var username = document.forms["myForm"]["username"].value;
-    var email = document.forms["myForm"]["email"].value;
-    var password = document.forms["myForm"]["password"].value;
+    var username = document.forms["myForm"]["username"].value.trim();
+    var email = document.forms["myForm"]["email"].value.trim();
+    var password = document.forms["myForm"]["password"].value.trim();
 
     //for giving alert -step 2
     //syntax: /^ $/
@@ -27,6 +27,8 @@ function formValidation() {
         alert("password is wrong");
         return false;
     }
+const userData = { username, email, password };
+  localStorage.setItem("currentUser", JSON.stringify(userData));
     alert("Login Successful" + username  + email  + password);
     return true;
 }
