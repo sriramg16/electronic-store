@@ -1,0 +1,131 @@
+/*navbar*/
+.btn2{
+    background-color: gray;
+    color: white;
+}
+.new1h1{
+    margin-top:10%;
+    font-size: 35px;
+    margin-bottom: 8%;
+}
+.carousel{
+    width: 85%;
+    margin-left: 1%;
+}
+.new3h1{
+     margin-top:10%;
+    font-size: 25px;
+    margin-bottom: 8%;
+    font-weight: bold;
+}
+.new5h1{
+margin-top:10%;
+    font-size: 25px;
+    margin-bottom: 8%;
+    font-weight: bold;
+}
+/*sec5*/
+.card-title{
+    font-size: medium;
+}
+
+
+/*sec7*/
+.new7h1{
+    font-size: 30px;
+}
+.btn7{
+    margin-top: 5%;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+/*sec8*/
+
+.new8h1{
+    margin-top: 5%;
+    font-size: 35px;
+    font-weight: bold;
+}
+.sec8img{
+    margin-top: 10%;
+    width: 25%;
+}
+
+
+/*sec9*/
+.d-block w-100{
+    width: 20px;
+}
+
+
+
+/*footer*/
+footer {
+    margin-bottom: -8%;
+  background: #333;
+  color: #f1f1f1;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+.footer-content {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-section h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+.footer-section ul li a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 15px;
+  border-top: 1px solid #665959;
+  padding-top: 10px;
+  font-size: 0.8rem;
+}
+.footerimg{
+    width: 150px;
+    margin-left: -3%;
+}
+/* Responsive stacking */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
+
+
+.jsimg{
+    width: 15%;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectronicStore - Buy/sell Electronics</title>
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="icon" href="./url logo.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/550ab2faeb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!--navbar-->
+  <!--navbar-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="./navbarlogo.webp" alt="Logo" width="100" />
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="d-flex me-auto my-2 my-lg-0" role="search">
+        <input class="form-control me-2" type="search" placeholder="🔍  Search" aria-label="Search" />
+      </form>
+
+      <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+        <li class="nav-item dropdown me-3">
+          <a class="nav-link dropdown-toggle btn btn-secondary" href="#" role="button"
+            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-location-dot"></i> Gurgaon
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Vijayawada</a></li>
+            <li><a class="dropdown-item" href="#">Bangalore</a></li>
+            <li><a class="dropdown-item" href="#">Hyderabad</a></li>
+            <li><a class="dropdown-item" href="#">Kolkata</a></li>
+            <li><a class="dropdown-item" href="#">Chennai</a></li>
+            <li><a class="dropdown-item" href="#">Mumbai</a></li>
+            <li><a class="dropdown-item" href="#">Delhi</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="login.html" class="btn btn-info">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!--new1-->
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <h4 class="new1h1">Live Deals</h4>
+            </div>
+            <!--sec2-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./car-img1.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./car-img2.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./car-img3.webp" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+            <!--new2-->
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <h4 class="new1h1">Our Services</h4>
+            </div>
+
+            <!--sec3-->
+            <div class="container mb-4">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                        <div class="card h-100">
+                            <img src="./card1.webp" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Buy New Phones</h5><br><br><br>
+                                <button class="btn btn-info">Show More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                        <div class="card h-100">
+                            <img src="./card2.webp" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Repair Phones</h5>
+                                <p>★ 4.82 (1.8 M)</p>
+                                <p>$10</p>
+                                <button class="btn btn-info">Buy the Service</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat card like below -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                        <div class="card h-100">
+                            <img src="./card-3.webp" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Buy Laptops</h5><br><br><br>
+                                <button class="btn btn-info">Show More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat card like below -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                        <div class="card h-100">
+                            <img src="./card4.webp" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Repair Laptops</h5>
+                                <p>★ 4.82 (1.2 M)</p>
+                                <p>$3</p>
+                                <button class="btn btn-info">Buy the Service</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<!--new-5-->
+<div class="container mb-4">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <h4 class="new5h1">Sell Your Old Products</h4>
+            </div>
+
+<!--sec3-->
+            <div class="container mb-4">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                        <div class="card h-100">
+                            <img src="./card21.webp" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Sell Phones</h5>
+                                <button class="btn btn-info">Sell</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                        <div class="card h-100">
+                            <img src="./card22.webp" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Sell Laptop</h5>
+                                <button class="btn btn-info">Sell</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat card like below -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                        <div class="card h-100">
+                            <img src="./card23.webp" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Sell Tv</h5>
+                                <button class="btn btn-info">Sell</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat card like below -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                        <div class="card h-100">
+                            <img src="./card24.webp" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Sell Tablet</h5>
+                                <button class="btn btn-info">Sell</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat card like below -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                        <div class="card h-100">
+                            <img src="./card25.webp" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Sell gaming Consoles</h5>
+                                <button class="btn btn-info">Sell</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat card like below -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                        <div class="card h-100">
+                            <img src="./card26.webp" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Sell Smartwatches</h5>
+                                <button class="btn btn-info">Sell</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+ <!--new3-->
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <h4 class="new3h1">How Electronic-Store Works</h4>
+            </div>
+            <!-- Section4 -->
+      <section id="section4" class="py-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 content2 text-center">
+              <img class="img4 img-fluid" src="./works.png" alt="Section 10 Image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!--new7-->
+      <div class="container mb-4">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <h4 class="new7h1">Refurbished Laptops</h4>
+            </div>
+<!--section6-->
+<div class="container mb-4">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="card h-100">
+              <img src="./ref1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Apple Macbook pro</h5>
+                <p>★ 4.82 (23)</p>
+                <p>$450</p>
+                <button class="btn7 btn-info">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="card h-100">
+              <img src="./ref2.avif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Hp Victus</h5>
+                <p>★ 4.82 (56)</p>
+                <p>$200</p><br>
+                <button class="btn7 btn-info">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat card like below -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="card h-100">
+              <img src="./ref3.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Lenovo Thinkpad</h5>
+                <p>★ 4.52 (85)</p>
+                <p>$400</p><br><br><br>
+                <button class="btn7 btn-info">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat card like below -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="card h-100">
+              <img src="./ref4.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Hp Envy 360</h5>
+                <p>★ 4.82 (15)</p>
+                <p>$350</p><br><br><br><br>
+                <button class="btn7 btn-info">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat card like below -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="card h-100">
+              <img src="./ref5.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Asus TUF</h5>
+                <p>★ 4.3 (85)</p>
+                <p>$430</p>
+                <button class="btn7 btn-info">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+<!--new4-->
+<div class="container mb-4">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <h4 class="new3h1">Why Us?</h4>
+            </div>
+
+      <!--sec-5-->
+ <section id="section4" class="py-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 content2 text-center">
+              <img class="img4 img-fluid" src="./whyus.png" alt="Section 10 Image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!--sec-8-->
+      <section class="8">
+      <div class="container mb-4">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <p class="new8h1"><span>Customer Reviews</span></p>
+            </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <img class="sec8img" src="./reviews.jpg">
+            </div>
+</div>
+</div>
+
+<section>
+    <div class="container mb-5">
+      <div id="carouselSection3" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4">
+                <h2>Sriram Gonuguntla</h2>
+                <h1>★★★★★</h1>
+              </div>
+              <div class="col-md-4">
+                <h2>Vinirmith</h2>
+                <h1>★★★★★</h1>
+              </div>
+              <div class="col-md-4">
+                <h2>Avinash komaravalli</h2>
+                <h1>★★★★</h1>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSection3" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselSection3" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--footer-->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h2>About</h2>
+        <p>Electronic heaven - Where you can buy anything at one place</p>
+        <img class="footerimg" src="./navbarlogo.webp" alt="Footer Logo">
+      </div>
+      <div class="footer-section links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact">
+        <h2>Contact</h2>
+        <address>
+          Electronic.store@gmail.com<br>
+          +(145)454545
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Electronic Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
