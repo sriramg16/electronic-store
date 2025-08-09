@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ElectronicStore - Sign Up</title>
-  <link rel="stylesheet" href="./index.css" />
-  <link rel="icon" href="./url logo.png" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
-  <script src="https://kit.fontawesome.com/550ab2faeb.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronic Store - Buy/Sell Electronics</title>
+  <link rel="icon" href="./url logo.png">
+  <link rel="stylesheet" href="./index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <style>
     #myForm {
       background-color: rgb(59, 168, 214);
       display: flex;
       flex-direction: column;
-      width: 450px;
+      max-width: 450px;
+      width: 100%;
       padding: 2%;
       border-radius: 15px;
       color: white;
-      margin-top: -5%;
+      margin-top: -2%;
+      margin-bottom: 2%;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
 
@@ -35,12 +37,12 @@
     }
 
     .jsimg {
-      width: 60px;
+      width: 150px;
       height: auto;
     }
 
     label {
-      margin-top: 10px;
+      margin-top: 5px;
       font-weight: 500;
     }
 
@@ -48,9 +50,10 @@
       padding: 8px;
       border-radius: 5px;
       border: none;
-      margin-top: 5px;
+      margin-top: 2px;
       margin-bottom: 10px;
       outline: none;
+      width: 100%;
     }
 
     button {
@@ -71,49 +74,67 @@
     }
 
     body {
+      background-image: url('./navbarbackground.avif');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       background-color: #f7f7f7;
+    }
+
+    .btn {
+      width: 100%;
+    }
+
+    .loginbutton {
+      text-decoration: underline;
+      background-color: transparent;
+      border: none;
+      color: rgb(23, 1, 1);
+      font-weight: 500;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 576px) {
+      #myForm {
+        padding: 5%;
+        max-width: 90%;
+      }
+
+      .jsimg {
+        width: 120px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="./navbarlogo.webp" alt="Logo" width="100" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Optional nav items can go here if needed -->
-      </div>
-    </div>
-  </nav>
-
-  <center>
-    <h1><span>Sign Up</span><img class="jsimg" src="./navbarlogo.webp" alt="Logo" /></h1><br />
+  <div class="container d-flex flex-column align-items-center justify-content-center min-vh-100">
+    <img class="jsimg mb-3" src="./navbarlogo.webp" alt="Logo" />
     <form id="myForm" onsubmit="return formValidation()">
       <label>Username</label>
-      <input type="text" placeholder="Enter username" id="username" /><br />
+      <input type="text" placeholder="Enter username" id="username" />
 
       <label>Email</label>
-      <input type="email" placeholder="Enter email" id="email" /><br />
+      <input type="email" placeholder="Enter email" id="email" />
 
       <label>Password</label>
-      <input type="password" placeholder="Enter password" id="password" /><br />
+      <input type="password" placeholder="Enter password" id="password" />
 
-      <button type="submit">Sign Up</button>
+      <button class="btn btn-info" type="submit">Login</button>
     </form>
-  </center>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
+    <div class="text-black fw-bold my-3">Or</div>
+
+    <form class="myform" action="./index.html" method="get">
+      <input class="loginbutton" type="submit" value="Go to Website" />
+    </form>
+  </div>
 
   <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
